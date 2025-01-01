@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web:
+    image: syuabr/euthanasia:v1.0.1
+    environment:
+      RAILS_ENV: production
+      RAILS_MASTER_KEY: "dckr_pat_VdE_Qn1IlyA0CrgLghgz7XVcUB8"
+      SECRET_KEY_BASE: "5aa7965ee1f81431af69015ef6edbd51b44eacecaec1f43312917c82221a48b9987966110f1e7ab445e6e50d44b97b3238882cffa2e6c168813a7ff7c1b42022"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./log:/rails/log
